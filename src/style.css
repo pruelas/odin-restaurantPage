@@ -1,0 +1,89 @@
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+
+body{
+    background-image: url("./flat-lay-batch-cooking-composition.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    border: violet solid;
+    align-items: center;
+}
+
+div#content{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    height: 70%;
+    width: 70%;;
+    background-color: rgba(37, 154, 158, 0.548);
+    align-items: center;
+    justify-content: center;
+}
+
+.tabDiv{
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    height: 10%;
+    width: 100%;
+    top: 0;
+    justify-content: end;
+    border: solid black;
+    background-color: rgba(0, 128, 128, 0.808);
+}
+
+.tabs{
+    display: flex;
+    height: 100%;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(37, 154, 158, 0.548);
+    text-shadow: -1px 0px 0 white;
+    font-size: 1.2em;
+    font-weight: bolder;
+    /* border: black solid; */
+    /* text-align: center; */
+
+}
+
+div.tabDiv :nth-child(2){
+    border-left:black solid;
+    border-right: black solid;
+}
+
+.titleDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+
+}
+
+h1{
+    /* position:absolute; */
+    font-size: 5rem;
+    text-shadow: -1px 1px 0 white;
+
+}
+
+p{
+    color: cornsilk;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-shadow: -1px 1px 0 black;
+    margin-top: 1em;
+    text-align: center;
+    /* outline: blueviolet solid; */
+}
+
+
