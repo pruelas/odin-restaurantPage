@@ -1,6 +1,6 @@
 export default function pageLoad(Food){
     let parentDiv = document.getElementById("content");
-    let tabDiv = document.createElement("div");
+    /* let tabDiv = document.createElement("div");
     tabDiv.classList.add('tabDiv');
 
     let homeTab = document.createElement("div");
@@ -18,18 +18,18 @@ export default function pageLoad(Food){
 
     tabDiv.append(homeTab);
     tabDiv.append(menuTab);
-    tabDiv.append(contactTab);
+    tabDiv.append(contactTab); */
 
-    let titleDiv = document.createElement("div");
-    titleDiv.classList.add('titleDiv');
+    let contentDiv = document.createElement("div");
+    contentDiv.classList.add('contentDiv');
 
     let headLine = document.createElement("h1");
     headLine.textContent = "Healthy Eating";
     let textDescription = document.createElement("p");
     textDescription.textContent = "Eat healthy today, for tomorrow's you! Freshness always guaranteed!";
-    titleDiv.appendChild(headLine);
-    titleDiv.appendChild(textDescription)
+    contentDiv.appendChild(headLine);
+    contentDiv.appendChild(textDescription)
 
-    parentDiv.appendChild(tabDiv);
-    parentDiv.appendChild(titleDiv);
+   /*  parentDiv.appendChild(tabDiv); */
+    parentDiv.appendChild(contentDiv);
 }
