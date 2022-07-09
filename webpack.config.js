@@ -20,6 +20,20 @@ module.exports = {
         type: 'asset/resource',
 
      },
+     {
+
+      test: /\.(csv|tsv)$/i,
+
+      use: ['csv-loader'],
+
+    },
+/*     {
+      test: /\.(png|jpg|gif)$/i,
+      use: [{
+          loader: 'file-loader',
+          options: {}
+      }]
+   } */
     ],
    },
 };

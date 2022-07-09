@@ -13,15 +13,16 @@ body{
     justify-content: center;
     border: violet solid;
     align-items: center;
+
 }
 
 div#content{
     display: flex;
     flex-direction: column;
     position:absolute;
-    height: 70%;
+    height: 100%;
     width: 70%;;
-    background-color: rgba(37, 154, 158, 0.548);
+    background-color: rgba(25, 103, 105, 0.692);
     align-items: center;
     justify-content: center;
 }
@@ -30,12 +31,12 @@ div#content{
     display: flex;
     flex-direction: row;
     position:absolute;
-    height: 10%;
+    height: 05%;
     width: 100%;
     top: 0;
     justify-content: end;
     border: solid rgba(0, 0, 0, 0.397);
-    background-color: rgba(0, 128, 128, 0.808);
+    background-color: rgba(68, 155, 158, 0.692);
 }
 
 .tabs{
@@ -44,7 +45,7 @@ div#content{
     flex:1;
     align-items: center;
     justify-content: center;
-    background-color: rgba(37, 154, 158, 0.548);
+    background-color: rgba(5, 163, 168, 0.329);
     text-shadow: -1px 0px 0 white;
     font-size: 1.2em;
     font-weight: bolder;
@@ -96,4 +97,21 @@ p{
     /* outline: blueviolet solid; */
 }
 
+.dish{
+    display: flex;
+    flex-direction: row;
+    background-color: thistle;
+}
 
+.dishItem > .dishImage{
+    height: 90%;
+    width: 90%;
+    background-size: cover;
+}
+
+.dishItem > .dishText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
