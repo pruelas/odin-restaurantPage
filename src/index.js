@@ -4,7 +4,10 @@ import menuLoad from "./menuLoad.js";
 import contactLoad from "./contactLoad.js";
 import './meyerWeb.css';
 import './style.css';
-
+import caesarSalad from './caesarSalad.jpg';
+import slawSalad from './slawSalad.jpg';
+import saladSandwich from './saladSandwich.jpg';
+import blackBeanWrap from './blackBeanWrap.jpg';
 
 console.log("Step 3 Statment" + Food);
 

@@ -1,41 +1,44 @@
-
-
-html,body{
+html{
     height: 100%;
     width: 100%;
-    
+    border: tomato solid;
+    margin-bottom: 0;
+    /* overflow: scroll; */
 }
 
 body{
     background-image: url("./flat-lay-batch-cooking-composition.jpg");
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
-    border: violet solid;
-    align-items: center;
+    border: rgb(251, 255, 0) solid;
+    height:100%;
 
 }
 
 div#content{
     display: flex;
     flex-direction: column;
-    position:absolute;
-    height: 100%;
-    width: 70%;;
+   /*  position:absolute; */
+    min-height: 100%;
+    width: 70%;
     background-color: rgba(25, 103, 105, 0.692);
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    border: tan solid 5px;
 }
 
 .tabDiv{
     display: flex;
     flex-direction: row;
-    position:absolute;
-    height: 05%;
+    /* position:absolute; */
+    min-height: 5%;
     width: 100%;
-    top: 0;
+    /* top: 0; */
+    align-items: center;
     justify-content: end;
-    border: solid rgba(0, 0, 0, 0.397);
+    /* border: solid rgba(0, 0, 0, 0.397); */
     background-color: rgba(68, 155, 158, 0.692);
 }
 
@@ -73,11 +76,10 @@ div.tabDiv :nth-child(2){
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-img{
-
+   /*  justify-content: center; */
+   /*  border: springgreen solid; */
+    min-height: 100%;
+    min-width: 100%;
 }
 
 h1{
@@ -85,6 +87,12 @@ h1{
     font-size: 5rem;
     text-shadow: -1px 1px 0 white;
 
+}
+
+.menuHeader{
+    font-size: 5rem;
+    text-shadow: -1px 1px 0 white;
+    border: tan solid;
 }
 
 p{
@@ -99,19 +107,44 @@ p{
 
 .dish{
     display: flex;
+    /* flex-grow: 1; */
+    flex-direction: column;
+    /* background-color: thistle; */
+    border: thistle solid;
+    width: 100%;
+    max-height: 100%;
+}
+
+.dishItem{
+    flex:1;
+    display: flex;
     flex-direction: row;
-    background-color: thistle;
+    align-items: center;
+    /* justify-content: center; */
+    border:steelblue solid;
+    /* flex-grow: 1; */
+    
+}
+
+img{
+/*     width: 100%;
+    max-height: 80%;
+    min-height: auto; */
 }
 
 .dishItem > .dishImage{
-    height: 90%;
-    width: 90%;
-    background-size: cover;
+ /*    max-width: 100%;
+    max-height: 100%; */
+/*     width: 100%;
+    height: 8rem; */
+    /* background-size: cover; */
+    flex: 1;
 }
 
 .dishItem > .dishText{
-    display: flex;
+/*     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    flex: 1;
 }
