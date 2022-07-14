@@ -2,8 +2,6 @@ html{
     height: 100%;
     width: 100%;
     border: tomato solid;
-    margin-bottom: 0;
-    /* overflow: scroll; */
 }
 
 body{
@@ -13,32 +11,25 @@ body{
     display: flex;
     justify-content: center;
     border: rgb(251, 255, 0) solid;
-    height:100%;
-
+    min-height:100%;
 }
 
 div#content{
+    flex: 1;
     display: flex;
     flex-direction: column;
-   /*  position:absolute; */
-    min-height: 100%;
-    width: 70%;
+    max-width: 70%;
     background-color: rgba(25, 103, 105, 0.692);
-    /* align-items: center; */
-    /* justify-content: center; */
     border: tan solid 5px;
 }
 
 .tabDiv{
     display: flex;
     flex-direction: row;
-    /* position:absolute; */
-    min-height: 5%;
+    min-height: 5rem;
     width: 100%;
-    /* top: 0; */
     align-items: center;
     justify-content: end;
-    /* border: solid rgba(0, 0, 0, 0.397); */
     background-color: rgba(68, 155, 158, 0.692);
 }
 
@@ -52,9 +43,6 @@ div#content{
     text-shadow: -1px 0px 0 white;
     font-size: 1.2em;
     font-weight: bolder;
-    /* border: black solid; */
-    /* text-align: center; */
-
 }
 
 .tabs:hover{
@@ -76,23 +64,17 @@ div.tabDiv :nth-child(2){
     display: flex;
     flex-direction: column;
     align-items: center;
-   /*  justify-content: center; */
-   /*  border: springgreen solid; */
-    min-height: 100%;
-    min-width: 100%;
 }
 
 h1{
-    /* position:absolute; */
     font-size: 5rem;
     text-shadow: -1px 1px 0 white;
-
 }
 
 .menuHeader{
     font-size: 5rem;
     text-shadow: -1px 1px 0 white;
-    border: tan solid;
+/*     border: tan solid; */
 }
 
 p{
@@ -102,49 +84,61 @@ p{
     text-shadow: -1px 1px 0 black;
     margin-top: 1em;
     text-align: center;
-    /* outline: blueviolet solid; */
 }
 
 .dish{
     display: flex;
-    /* flex-grow: 1; */
     flex-direction: column;
-    /* background-color: thistle; */
-    border: thistle solid;
+/*     border: rgb(197, 0, 197) solid; */
     width: 100%;
-    max-height: 100%;
+    gap: 1rem;
 }
 
 .dishItem{
-    flex:1;
+    flex: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
-    border:steelblue solid;
-    /* flex-grow: 1; */
+    /* gap: 2rem; */
+    border-bottom:rgb(0, 0, 0) solid;
     
 }
 
-img{
-/*     width: 100%;
-    max-height: 80%;
-    min-height: auto; */
+.dishItem > .dishImage{
+    /* margin: 2rem; */
+/*     border: turquoise solid; */
+    flex:1;
+    min-width: 0;
+    min-height: 0;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 
-.dishItem > .dishImage{
- /*    max-width: 100%;
-    max-height: 100%; */
-/*     width: 100%;
-    height: 8rem; */
-    /* background-size: cover; */
-    flex: 1;
+.dishText > .dishTitle{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 2em;
+    text-shadow: -2px 2px 0 rgb(0, 0, 0);
+}
+
+.dishText > .dishDescription{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-shadow: -1px 1px 0 rgb(255, 255, 255);
+    padding: 1rem 0;
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.582) ;
+    text-align: center;
 }
 
 .dishItem > .dishText{
-/*     display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     flex: 1;
+    /* border: rgb(21, 253, 0) solid; */
+    gap: 1rem;
+
+    justify-items: center;
+    align-items: center;
 }

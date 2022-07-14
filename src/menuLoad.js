@@ -19,9 +19,11 @@ export default function menuLoad(){
     drinkItems.classList.add('drink');
     let textDescription = document.createElement("p");
     textDescription.textContent = "Insert menu items here.";
+
     contentDiv.appendChild(headLine);;
     contentDiv.appendChild(drinkItems);
     contentDiv.appendChild(dishItems);
+
 
     let caesarSaladDish = document.createElement('div');
     caesarSaladDish.classList.add('dishItem');
@@ -29,12 +31,18 @@ export default function menuLoad(){
     let caesarSaladImage = new Image();
     caesarSaladImage.src = caesarSalad;
     caesarSaladImage.classList.add('dishImage');
-    let dishText = document.createElement('div');
-    dishText.classList.add('dishText');
-    dishText.textContent = 'idk';
+    let caesarSaladText = document.createElement('div');
+    caesarSaladText.classList.add('dishText');
+    let caesarSaladTitle = document.createElement('div');
+    caesarSaladTitle.classList.add('dishTitle');
+    caesarSaladTitle.textContent = "Caesar Salad";
+    let ceasarSaladDescription = document.createElement('div');
+    ceasarSaladDescription.classList.add('dishDescription');
+    ceasarSaladDescription.textContent = 'A classic caeser salad with croutons and light dressing';
+
 
     caesarSaladDish.append(caesarSaladImage);
-    caesarSaladDish.append(dishText);
+    caesarSaladDish.append(caesarSaladText);
     dishItems.append(caesarSaladDish);
 
 
@@ -44,12 +52,20 @@ export default function menuLoad(){
     let slawSaladImage = new Image();
     slawSaladImage.src = slawSalad;
     slawSaladImage.classList.add('dishImage');
-    let slawDishText = document.createElement('div');
-    slawDishText.classList.add('dishText');
-    slawDishText.textContent = 'idk';
+    let slawSaladText = document.createElement('div');
+    slawSaladText.classList.add('dishText');    
+    let slawSaladTitle = document.createElement('div');
+    slawSaladTitle.classList.add('dishTitle');
+    slawSaladTitle.textContent = "Asian Slaw Salad";
+    let slawSaladDescription = document.createElement('div');
+    slawSaladDescription.classList.add('dishDescription');
+    slawSaladDescription.textContent = 'A salad with fresh herbs annd peaches with miso dressing';
+
+    slawSaladText.append(slawSaladTitle);
+    slawSaladText.append(slawSaladDescription);
 
     slawSaladDish.append(slawSaladImage);
-    slawSaladDish.append(slawDishText);
+    slawSaladDish.append(slawSaladText);
     dishItems.append(slawSaladDish);
 
 
@@ -61,8 +77,16 @@ export default function menuLoad(){
     saladSandwichImage.classList.add('dishImage');
     let saladSandwichText = document.createElement('div');
     saladSandwichText.classList.add('dishText');
-    saladSandwichText.textContent = 'idk';
+    let saladSandwichTitle = document.createElement('div');
+    saladSandwichTitle.classList.add('dishTitle');
+    saladSandwichTitle.textContent = "Salad Sandwich";
+    let saladSandwichDescription = document.createElement('div');
+    saladSandwichDescription.classList.add('dishDescription');
+    saladSandwichDescription.textContent = 'A delicious filling meal made with fresh vegetables';
 
+    saladSandwichText.append(saladSandwichTitle);
+    saladSandwichText.append(saladSandwichDescription);
+    
     saladSandwichDish.append(saladSandwichImage);
     saladSandwichDish.append(saladSandwichText);
     dishItems.append(saladSandwichDish);
@@ -76,29 +100,20 @@ export default function menuLoad(){
     blackBeanWrapImage.classList.add('dishImage');
     let blackBeanWrapText = document.createElement('div');
     blackBeanWrapText.classList.add('dishText');
-    blackBeanWrapText.textContent = 'idk';
+    let blackBeanWrapTitle = document.createElement('div');
+    blackBeanWrapTitle.classList.add('dishTitle');
+    blackBeanWrapTitle.textContent = "Caesar Salad";
+    let blackBeanWrapDescription = document.createElement('div');
+    blackBeanWrapDescription.classList.add('dishDescription');
+    blackBeanWrapDescription.textContent = 'A wrap made with black beans, salsa, corn, avocado, olives, and greens';
+
+    blackBeanWrapText.append(blackBeanWrapTitle);
+    blackBeanWrapText.append(blackBeanWrapDescription);
+
 
     blackBeanWrapDish.append(blackBeanWrapImage);
     blackBeanWrapDish.append(blackBeanWrapText);
     dishItems.append(blackBeanWrapDish);
-
-
-
-/*     let caesarSaladDish = document.createElement('div');
-    caesarSaladDish.classList.add('dishImage');
-
-    let caesarSaladImage = new Image();
-    caesarSaladImage.src = caesarSalad;
-    caesarSaladDish.classList.add('dishImage');
-    let dishText = document.createElement('div');
-    dishText.classList.add('dishText');
-    dishText.textContent = 'idk';
-
-    dishItem.append(caesarSaladImage);
-    dishItem.append(dishText);
-    dishItems.append(dishItem); */
-
-    console.log(menuData);
 
     parentDiv.appendChild(contentDiv);
 }
