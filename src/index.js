@@ -47,7 +47,6 @@ tabs.forEach(tab => {
             pageLoad(Food);
             tab.classList.add("selected");
             
-            /* tab.id = "homeSelected"; */
         });
     }else if(tab.id === "menu"){
         tab.addEventListener('click', function(e){

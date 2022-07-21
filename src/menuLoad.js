@@ -36,10 +36,12 @@ export default function menuLoad(){
     let caesarSaladTitle = document.createElement('div');
     caesarSaladTitle.classList.add('dishTitle');
     caesarSaladTitle.textContent = "Caesar Salad";
-    let ceasarSaladDescription = document.createElement('div');
-    ceasarSaladDescription.classList.add('dishDescription');
-    ceasarSaladDescription.textContent = 'A classic caeser salad with croutons and light dressing';
+    let caesarSaladDescription = document.createElement('div');
+    caesarSaladDescription.classList.add('dishDescription');
+    caesarSaladDescription.textContent = 'A classic caeser salad with croutons and light dressing';
 
+    caesarSaladText.append(caesarSaladTitle);
+    caesarSaladText.append(caesarSaladDescription);
 
     caesarSaladDish.append(caesarSaladImage);
     caesarSaladDish.append(caesarSaladText);

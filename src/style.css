@@ -1,7 +1,6 @@
 html{
     height: 100%;
     width: 100%;
-    border: tomato solid;
 }
 
 body{
@@ -10,7 +9,6 @@ body{
     background-attachment: fixed;
     display: flex;
     justify-content: center;
-    border: rgb(251, 255, 0) solid;
     min-height:100%;
 }
 
@@ -19,8 +17,10 @@ div#content{
     display: flex;
     flex-direction: column;
     max-width: 70%;
-    background-color: rgba(25, 103, 105, 0.692);
-    border: tan solid 5px;
+    background-color: rgba(52, 127, 129, 0.692);
+    border-top: rgba(0, 0, 0, 0.411) solid;
+    border-left: rgba(0, 0, 0, 0.411) solid;
+    border-right: rgba(0, 0, 0, 0.411) solid;
 }
 
 .tabDiv{
@@ -30,7 +30,7 @@ div#content{
     width: 100%;
     align-items: center;
     justify-content: end;
-    background-color: rgba(68, 155, 158, 0.692);
+    background-color: rgba(52, 127, 129, 0.692);
 }
 
 .tabs{
@@ -39,10 +39,11 @@ div#content{
     flex:1;
     align-items: center;
     justify-content: center;
-    background-color: rgba(5, 163, 168, 0.329);
+    background-color: rgba(5, 163, 168, 0.192);
     text-shadow: -1px 0px 0 white;
     font-size: 1.2em;
     font-weight: bolder;
+    border-bottom: rgba(0, 0, 0, 0.521) solid;
 }
 
 .tabs:hover{
@@ -51,8 +52,12 @@ div#content{
 }
 
 .selected{
-    background-color: rgba(0, 236, 236, 0.562);
+    background-color: rgba(202, 247, 255, 0.582);
     flex: 1.1; 
+}
+
+.selected:hover{
+    background-color: rgba(202, 247, 255, 0.582);
 }
 
 div.tabDiv :nth-child(2){
@@ -64,32 +69,65 @@ div.tabDiv :nth-child(2){
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1em;
 }
 
 h1{
     font-size: 5rem;
-    text-shadow: -1px 1px 0 white;
+    color: white;
+    text-shadow: -2px 2px 0 rgb(0, 0, 0);
+
+}
+
+.homeHeader{
+    margin-top: 30%;
+
 }
 
 .menuHeader{
     font-size: 5rem;
-    text-shadow: -1px 1px 0 white;
-/*     border: tan solid; */
+    color: rgb(255, 255, 255);
+    text-shadow: -2px 2px 0 rgb(0, 0, 0);
+    margin-bottom: 1rem;
+    border-bottom: rgba(255, 255, 255, 0.582)  solid;
+    width: 100%;
+    text-align: center;
 }
 
 p{
-    color: cornsilk;
+    color: black;
     font-weight: bolder;
     font-size: 1.5em;
-    text-shadow: -1px 1px 0 black;
+    text-shadow: -1px 1px 0 white;
     margin-top: 1em;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.582) ;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1rem 1em;;
+}
+
+.contactHeader{
+    margin-top: 30%;
+}
+
+.contactInfo{
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-shadow: -1px 1px 0 white;
+    margin-top: 1em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.582) ;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1rem 1em;;
 }
 
 .dish{
     display: flex;
     flex-direction: column;
-/*     border: rgb(197, 0, 197) solid; */
     width: 100%;
     gap: 1rem;
 }
@@ -99,14 +137,11 @@ p{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* gap: 2rem; */
-    border-bottom:rgb(0, 0, 0) solid;
+    border-bottom:rgba(255, 255, 255, 0.582)  solid;
     
 }
 
 .dishItem > .dishImage{
-    /* margin: 2rem; */
-/*     border: turquoise solid; */
     flex:1;
     min-width: 0;
     min-height: 0;
@@ -136,9 +171,7 @@ p{
     display: flex;
     flex-direction: column;
     flex: 1;
-    /* border: rgb(21, 253, 0) solid; */
     gap: 1rem;
-
     justify-items: center;
     align-items: center;
 }
