@@ -20,6 +20,7 @@ module.exports = {
         type: 'asset/resource',
 
      },
+     
      {
 
       test: /\.(csv|tsv)$/i,
