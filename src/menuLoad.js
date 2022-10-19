@@ -61,7 +61,7 @@ export default function menuLoad(){
     slawSaladTitle.textContent = "Asian Slaw Salad";
     let slawSaladDescription = document.createElement('div');
     slawSaladDescription.classList.add('dishDescription');
-    slawSaladDescription.textContent = 'A salad with fresh herbs annd peaches with miso dressing';
+    slawSaladDescription.textContent = 'A salad with fresh herbs and peaches with miso dressing';
 
     slawSaladText.append(slawSaladTitle);
     slawSaladText.append(slawSaladDescription);
