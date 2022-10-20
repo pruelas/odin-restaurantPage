@@ -40,6 +40,7 @@ parentDiv.append(tabDiv);
 pageLoad(Food);
 const tabs = Array.from(document.getElementsByClassName("tabs"));
 
+//Calls function for each tab to generate the respective age
 tabs.forEach(tab => {
     if(tab.id === "home"){
         tab.addEventListener('click', function(e){
@@ -65,6 +66,7 @@ tabs.forEach(tab => {
     }  
 });
 
+//Removes all of the content of the previously generated page
 function deleteContent(){
     let contentDiv = document.getElementById('content');
     contentDiv.removeChild(contentDiv.lastChild);

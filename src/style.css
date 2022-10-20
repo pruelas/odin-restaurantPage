@@ -39,25 +39,28 @@ div#content{
     flex:1;
     align-items: center;
     justify-content: center;
-    background-color: rgba(5, 163, 168, 0.192);
-    text-shadow: -1px 0px 0 white;
+    background-color: rgba(0, 54, 63, 0.582);
+    color: white;
+    text-shadow: -1px 0px 0 rgb(0, 0, 0);
     font-size: 1.2em;
-    font-weight: bolder;
+    font-weight: bold;
     border-bottom: rgba(0, 0, 0, 0.521) solid;
 }
 
 .tabs:hover{
-    background-color: rgba(1, 83, 83, 0.596);
+    background-color: 
+    rgba(5, 163, 168, 0.192);
     flex: 1.1;
 }
 
 .selected{
-    background-color: rgba(202, 247, 255, 0.582);
+    background-color: 
+    rgba(5, 163, 168, 0.192);
     flex: 1.1; 
 }
 
 .selected:hover{
-    background-color: rgba(202, 247, 255, 0.582);
+    background-color: rgba(0, 69, 82, 0.582);
 }
 
 div.tabDiv :nth-child(2){
