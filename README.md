@@ -1,5 +1,5 @@
 # odin-restaurantPage
-A simple restaurant homepage created by following [The Odin Project - Project:Restaurant Page](#https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
+A simple restaurant homepage created by following [The Odin Project - Project:Restaurant Page](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
 
 
 ## Features
